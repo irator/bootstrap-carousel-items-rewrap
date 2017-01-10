@@ -10,8 +10,7 @@ function rewrap() {
     for (var i = 0; i < dl; i = i + 3) {
       div.slice(i, i + 3).wrapAll(newItem)
     }
-  }
-  if($(window).width() < 768){
+  } else {
     for (var i = 0; i < dl; i = i + 1) {
       div.slice(i, i + 1).wrapAll(newItem)
     }
